@@ -4,7 +4,7 @@
 
 In this project, we will build and ETL(Extract, Transform, Load) pipeline using the "The Movie Database" TMDb API on AWS. The pipeline will retrieve data from the TMDb API, transform it to a desired format, and load it into an AWS data store. 
 
-### Will add diagram ![example of image](https://github.com/rcnnarvaez/tmdb-end-to-end-data-engineering-project/blob/main/TMDb_API%20ETL%20Pipeline.jpeg).
+### Architecture ![example of image](https://github.com/rcnnarvaez/tmdb-end-to-end-data-engineering-project/blob/main/TMDb_API%20ETL%20Pipeline.jpeg).
 
 ### About Dataset/API
 This API contains information about... [TMDb API](https://developer.themoviedb.org/docs/getting-started).
@@ -22,11 +22,19 @@ This API contains information about... [TMDb API](https://developer.themoviedb.o
 
 6. **Amazon Athena:** Amazon Athena...
 
-### Install Packages
+### Install Packages and Imports
 ```
 pip install pandas
 pip install numpy
 pip instal ....
+
+import json
+import boto3
+from datetime import datetime
+from io import StringIO
+import pandas as pd
+import os
+import requests
 ```
 ### Project Excecution Flow
 Extract Data from API -> Lambda Trigger (every 1 hour) -> Run Extract Code -> Store Raw Data -> Trigger Transform Function -> Transform Data and Load it -> Query Using Athena
