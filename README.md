@@ -26,7 +26,7 @@ This API contains information about... [TMDb API](https://developer.themoviedb.o
 ```
 pip install pandas
 pip install numpy
-pip instal ....
+pip instal
 
 import json
 import boto3
