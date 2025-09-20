@@ -25,6 +25,8 @@ The core processing happens in an AWS Lambda function that:
 Then, I used AWS Glue Crawlers to infer the schema and register the data in the Glue Data Catalog.
 Finally, I queried the data using AWS Athena, which allows analysts to run SQL queries directly over the data in S3.
 
+### Cleaned Data Sample ![TMDb cleaned data] ()
+
 ### Services Used
 1. **Amazon S3 (Simple Storage Service):** 
    
